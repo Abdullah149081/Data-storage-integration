@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Cosmetic from "../Cosmetic/Cosmetic";
-import "./Cosmetics.css"
+import "./Cosmetics.css";
 
 const Cosmetics = () => {
   const [cosmetics, setCosmetics] = useState([]);
