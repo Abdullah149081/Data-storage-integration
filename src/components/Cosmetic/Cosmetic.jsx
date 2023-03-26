@@ -5,8 +5,13 @@ import "./Cosmetic.css";
 
 const Cosmetic = (props) => {
   const { name, age, gender, id } = props.cosmetic;
+  // localStorage
   const addToCart = () => {
     addToCartDB(id);
+  };
+  // reset
+  const resetDB = () => {
+    localStorage.clear();
   };
 
   return (
@@ -17,6 +22,9 @@ const Cosmetic = (props) => {
       <p>id: {id}</p>
       <button onClick={() => addToCart(id)} className="btn ">
         Add to cart
+      </button>
+      <button className="btn" onClick={resetDB}>
+        Reset
       </button>
     </div>
   );
