@@ -1,0 +1,32 @@
+[
+  {
+    "id": "641fca4d6271d7bc99b49b3f",
+    "age": 21,
+    "name": "Vinson Tucker",
+    "gender": "male"
+  },
+  {
+    "id": "641fca4dfe49897d31436471",
+    "age": 33,
+    "name": "Branch Ward",
+    "gender": "male"
+  },
+  {
+    "id": "641fca4d324daf107674e5f9",
+    "age": 34,
+    "name": "Mckenzie Hurley",
+    "gender": "male"
+  },
+  {
+    "id": "641fca4d50dd739f544a5fa1",
+    "age": 23,
+    "name": "Chasity House",
+    "gender": "female"
+  },
+  {
+    "id": "641fca4d7ced7cc9cd33d0cc",
+    "age": 31,
+    "name": "Le Irwin",
+    "gender": "male"
+  }
+]

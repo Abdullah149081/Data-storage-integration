@@ -1,11 +1,17 @@
-
+import React from "react";
 import "./App.css";
-import Math from "./components/Math/Math";
+import Cosmetics from "./components/Cosmetics/Cosmetics";
 
 function App() {
-  return <div className="App">
-    <Math></Math>
-  </div>;
+  return (
+    <div className="App">
+      {/* <Math></Math> */}
+
+      <div>
+        <Cosmetics></Cosmetics>
+      </div>
+    </div>
+  );
 }
 
 export default App;
