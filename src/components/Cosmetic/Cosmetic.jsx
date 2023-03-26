@@ -1,5 +1,5 @@
 import React from "react";
-import { addToCartDB } from "../../Utility/Fakedb";
+import { addToCartDB, removeCartDB } from "../../Utility/Fakedb";
 
 import "./Cosmetic.css";
 
@@ -10,8 +10,8 @@ const Cosmetic = (props) => {
     addToCartDB(id);
   };
   // reset
-  const resetDB = () => {
-    localStorage.clear();
+  const removeDB = () => {
+    removeCartDB(id);
   };
 
   return (
@@ -23,8 +23,8 @@ const Cosmetic = (props) => {
       <button onClick={() => addToCart(id)} className="btn ">
         Add to cart
       </button>
-      <button className="btn" onClick={resetDB}>
-        Reset
+      <button className="btn" onClick={() => removeDB(id)}>
+        Remove
       </button>
     </div>
   );
