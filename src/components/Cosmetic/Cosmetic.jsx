@@ -1,13 +1,13 @@
 import React from "react";
+import { addToCartDB } from "../../Utility/Fakedb";
+
 import "./Cosmetic.css";
 
 const Cosmetic = (props) => {
   const { name, age, gender, id } = props.cosmetic;
   const addToCart = () => {
-    console.log("click", id);
+    addToCartDB(id);
   };
-
-  const cart = () => addToCart(id);
 
   return (
     <div className="cosmetic-container space-y-4">
@@ -15,7 +15,7 @@ const Cosmetic = (props) => {
       <p>Age: {age}</p>
       <p>Gender: {gender}</p>
       <p>id: {id}</p>
-      <button onClick={cart} className="btn ">
+      <button onClick={() => addToCart(id)} className="btn ">
         Add to cart
       </button>
     </div>
